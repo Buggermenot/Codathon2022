@@ -1,0 +1,39 @@
+Codathon2022 (E) Q6. Appraisal analysis
+
+Mr. Raj is working in some organization. Due to annual appraisal process, his team manager has given him performance
+score of employees of ‘N’ branches in sorted lists (increasing order). His task is to combine all the list in one list
+and this list must be in sorted order of performance (increasing order). Consider scores as an integer value.
+
+Example
+
+Input: Let N = 3
+
+1 5 28
+
+3 9 15 29
+
+2 4
+
+Output
+
+1 2 3 4 5 9 15 28 29
+
+Test cases
+
+Test case 1:
+
+Input:
+
+4     <-- Number of sorted arrays
+
+10 20 30 40
+
+15 25 45
+
+3 27 37 89 99
+
+5 19 48
+
+Output:
+
+3 5 10 15 19 20 25 27 30 37 40 45 48 89 99

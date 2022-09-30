@@ -1,0 +1,51 @@
+Codathon2022 (E) Q13. Waiter's Game
+
+    In a restaurant, the waiters are playing the game with the plates in their free time. They are putting, removing and
+inserting the plates on the top. Each plate is assigned some number. The numbers need not be unique. The waiters are
+performing following three operations:
+
+push v:  push (add) the plate on the stack,
+
+pop: pop (remove) the plates and
+
+add k, v: Add v to each of the bottom k elements of the stack.
+
+Your task is to help the waiter to display the number on the plate which is on the top. If the stack is empty, then
+display “Empty!”.
+
+Input:
+
+1. The first line denotes the number of operations.
+2. Each following line has single line of input, denoting the either operations, push v, pop and add k,v.
+Output: For each operation, display the answer that is number on the top plate of the stack.
+
+Test case 1
+
+Input
+
+7
+
+push 1
+
+push 2
+
+push 3
+
+add 2 1
+
+pop
+
+pop
+
+pop
+
+Output
+
+1
+2
+3
+3
+3
+2
+
+Empty!

@@ -1,0 +1,37 @@
+Codathon2022 (E) Q19. Custom Sort
+
+A teacher want to re- arrange the subject marks of students in the following order:
+
+First, marks of 20% students who scored poorly in the exam are arranged in the ascending order
+
+Second, marks of top 20% students are arranged in the descending order
+
+Followed by marks of remaining students in the ascending order.
+
+For example if the list has marks {23, 50, 70,  34, 18 , 65,  33, 78, 23,12} , it will be rearranged as
+
+{12, 18, 78, 70,  23, 23,33, 34,50, 65}
+
+Input:
+The first line contains an integer N denoting the length of the array. The next line contains N integers
+denoting the elements of the array.
+
+Output:
+Output the array of size N with elements in the required order.
+
+Constraints:
+10 <= N <= 106
+1 <= array elements <= 109
+
+
+Test Case 1:
+
+Input
+
+10
+
+23  50  70 34 18 65 33 78 23 12
+
+Output
+
+12 18 78 70 23 23 33 34 50 65

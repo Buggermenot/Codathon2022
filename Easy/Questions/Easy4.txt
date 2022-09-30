@@ -1,0 +1,44 @@
+Codathon2022 (E) Q21. Zero Sum Problem
+
+A student has given task to check out the number of subsets from N elements whose sum is zero.
+If sum is zero then print True else print False.
+
+Example 1:
+
+Input:
+
+6 <--input array size
+
+2 3 4 8 -7 1 <-- Input values
+
+Output:
+
+True
+
+
+
+Example 2:
+
+Input:
+
+6
+
+2 3 4 8 7 1
+
+Output:
+
+False
+
+
+
+Test Case 1:
+
+Input:
+
+6
+
+2 3 4 8 -7 1
+
+Output:
+
+True

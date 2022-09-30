@@ -1,0 +1,40 @@
+Codathon2022 (E) Q22. Rotating String
+
+Mr. Hari has given task of checking that string “string2” can be derived from string1 by rotating it in a
+clockwise or anti-clockwise.
+
+Example 1:
+
+Input
+
+string1=bcdefg
+
+string2= defgbc
+
+Output:
+
+True
+
+Example 2:
+
+Input
+
+string1=bcdgfe
+
+string2= defgbc
+
+Output:
+
+False
+
+Test Case 1:
+
+Input:
+
+567234
+
+123456
+
+Output
+
+False

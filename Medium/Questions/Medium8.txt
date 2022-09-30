@@ -1,0 +1,70 @@
+Codathon2022 (M) Q5. Beware! : Mines are There
+
+Mr. XYZ has given a rectangular area containing m*n tiles where 3< m, n <=6. Each tile is filled with O or X or M,
+where O represents an open tile, X represents a blocked tile and M represents landmines in the tile. Write a code to
+help Mr. XYZ to find the shortest distance of every open tile from its nearest mine.
+
+Constraints:
+
+You are allowed to move either of the four directions (diagonal moves are not allowed). You can assume tiles with the
+mine have distance 0, blocked and unreachable tiles have distance -1.
+
+Example:
+
+Input:
+
+6 5                <--Array dimensions
+
+O   M   O   O   X                 <--Input array values
+
+O   X   X   O   M
+
+O   O   O   O   O
+
+O   X   X   X   O
+
+O   O   M   O   O
+
+O   X   X   M   O
+
+
+
+Output:
+
+
+
+1   0   1   2  -1
+
+2  -1  -1   1   0
+
+3   2   3   2   1
+
+3  -1  -1  -1   2
+
+2   1   0   1   2
+
+3  -1  -1   0   1
+
+Test Case 1:
+
+Input:
+
+4 4
+
+O X X M
+
+M X O O
+
+O O M O
+
+O O O O
+
+Output:
+
+1 -1 -1 0
+
+0 -1 1 1
+
+1 1 0 1
+
+2 2 1 2

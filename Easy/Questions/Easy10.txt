@@ -1,0 +1,30 @@
+Codathon2022 (E) Q7. Cash Translation Problem
+
+Mr. Stephen is working in a translator company. His task is to translate the given cash (positive integer number) into
+words. He found that maximum cash value cannot be more than 10000000000. Write the C++ code to help Mr. Stephen.
+
+For examples:
+
+Input1: 12345
+
+Output1:
+
+Twelve thousand three hundred forty five
+
+Input2: 1234567
+
+Output2:
+
+Twelve lakh thirty four thousand five hundred sixty seven
+
+Test cases
+
+Test case 1:
+
+Input:
+
+79
+
+Output:
+
+Seventy nine

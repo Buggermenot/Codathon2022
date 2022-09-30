@@ -1,0 +1,69 @@
+Codathon2022 (M) Q2. Order of Request Serving
+
+Professor Jack, teaches the subject of Data Structure to the students of a large classroom. As the course is progressing
+ahead, a lot of doubts/queries from the students regarding the concept came into the picture. Due to the large size of
+the classroom and increasing queries, professor often misses the queries of at-risk students (low-scorers). So, to find
+a solution, he chalks out a strategy to deal with this situation. Below is the strategy:
+
+There will be a simple array of size n representing the number of queries that are arriving in a day and a waiting room
+of size w which he uses in his strategy. Each student in the system is represented by the total marks m he/she has
+scored in the previous semester. The total marks range from 0 to 100.
+
+1.  At the start of the day, when the array is empty, the very first student is directly allowed to enter the array
+    using insertion at last (rear end).
+2.  When the array is non-empty, and next student(s) enter the system, the last (rear end) student marks is checked and
+    compared to the newly entered student.
+        -If the marks of newly entered student is less than or equal to the marks of the student present at rear end,
+            then the student is allowed to enter the array from rear end.
+        -If the marks of newly entered student are more than the marks of the student present at rear end, then the
+            new student is said to wait inside the waiting room.
+        -However, if the capacity of waiting room is exceeded at any point of time (due to the new request) then,
+        -Firstly, the student with minimum marks amongst all the students of the waiting room is picked up and he/she
+            is allowed to enter the array without the rear end marks comparison. In case more than one student is having
+            same minimum marks, then the tie is broken on first come first serve basis.
+        -Secondly, as now a space is created, the new student is allowed to enter and wait in the waiting room.
+
+    This process is repeated for all further requests.
+
+3.  As all the requests are finished, waiting room is checked. Until it is not-empty, one-by-one student with minimum
+    marks is picked up and allowed to enter the array from rear end, without any comparison.
+
+
+You are requested to output the sequence in which the final requests will be served, by Mr. ABC.
+
+Input Format:
+
+w  ---> Waiting Room Capacity
+
+n  ---> Number of requests arriving in a day
+
+sequence of n student marks with space as separator.
+
+Output Format:
+
+Final Sequence of serving the student request.
+
+Number<space>Number<space> ………. Number<space>Number<space>
+
+Input Constraints:
+
+1 <= w <= 50
+
+1 <= n <= 50
+
+0 <= m <= 100
+
+Sample Test Case - 1:
+
+Sample Input:
+
+4   <-- waiting room capacity
+
+8  <-- n: total number of requests in that particular day
+
+10 15 20 25 15 30 5 27 <-- n sequence of marks:
+
+Sample Output:
+
+10 15 5 15 20 25 27 30
+

@@ -1,0 +1,149 @@
+Codathon2022 (H) Q1. “I” Shape Analysis in the given Data
+
+A 2-D array having dimensions m*n where 2< m = n < 7 are given. The values stored in array lies in between
+-5 < arr[i][j] <= 5. Calculate the “I” shape sum (sum of “I” shape values) for every “I” shape in array. Print the
+maximum sum, I shape values along with position of the beginning row and column of the maximum sum “I” shape.
+
+Example:
+
+A 2-dimensional array having dimensions 5x5 is given below:
+
+0 0 1 0 0
+
+0 1 0 0 0
+
+1 0 1 0 0
+
+0 1 0 0 0
+
+1 0 1 0 1
+
+
+
+A “I” shape in the array is a subset of values having graphical representation:
+
+a b c
+
+  d
+
+e f g
+
+
+
+There are 9 “I” shape possible in the given array:
+
+
+
+001 010 100
+
+ 1     0     0
+
+101 010 100
+
+010 100 000
+
+ 0     1     0
+
+000 000 000
+
+101 010  100
+
+  1     0     0
+
+101 010   101
+
+
+
+Answer:
+
+5                                  (sum)
+
+101                              (Maximum Sum “I” shape)
+
+ 1
+
+101
+
+2 0                                (Maximum sum “I” shape starts from row 2 column 0)
+
+
+
+Input Format
+
+3
+
+Each of the “m” lines of input array[i] contains “n” space-separated integers arr[i][j].
+
+Constraints:
+
+
+
+-5< arr[i][j] <=5
+
+2< i, j <7
+
+Output Format
+
+
+
+Print the largest (maximum) “I” shape sum found in array
+
+Print the largest (maximum) “I” shape
+
+Print the starting row and column of maximum “I” shape
+
+Sample Input:
+
+6
+
+1 1 1 0 0 0
+
+0 1 0 0 0 0
+
+1 1 1 0 0 0
+
+0 0 2 4 4 0
+
+0 0 0 2 0 0
+
+0 0 1 2 4 0
+
+
+
+Explanation:
+
+First line contains dimensions 6*6 (m*n).
+
+Second line onwards contains the 6 lines containing 6 space separated values.
+
+
+
+Sample Output
+
+
+
+19
+
+2 4 4
+
+2
+
+1 2 4
+
+3 2
+
+Explanation
+
+
+
+The “I” shape maximum sum is: 19
+
+The “I” shape with the maximum sum (19) is:
+
+2 4 4
+
+  2
+
+1 2 4
+
+The “I” shape starting row is 3 and column is 2.

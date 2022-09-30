@@ -1,0 +1,23 @@
+Codathon2022 (M) Q18. Visit the Field
+
+A farmer has a field in the shape of tetrahedron. He wants to create a spherical moving path inside the field touching
+all the sides of the field. As he is a clever person so, he wants to create a path for the lazy people. For this, he
+wants to consider the distance between centre of the field and the boundary of the spherical shape. You must help him
+to find the path from center to spherical boundary. (i.e. a sphere tangent to all the faces).
+
+Input
+
+The first single line is for the number N of test cases. ( N <= 20 ) The 6 integer number for each of the next N -- the
+lengths of the sides of a tetrahedron separated by single spaces. The higher limit of edges are 1000
+(not greater than 1000) and for the tetrahedron ABCD, the order of the edges is: AB, AC, AD, BC, BD, CD.
+
+Output
+
+N lines, each consisting of a real number given with four digits decimal precision equal to the radius of a sphere
+inscribed in the given tetrahedron.
+
+Example
+
+3 3 3 3 3 3
+
+0.6124

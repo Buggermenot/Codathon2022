@@ -1,0 +1,55 @@
+Codathon2022 (M) Q20. Find Odd pairs
+
+An array of length at least 3 having distinct integers is oddie iff  second highest odd element lies to the left of the
+highest odd value. For example, [1, 2, 13, 10,  15, 12, 17] is oddie as the second-highest value 15 lies to the left of
+highest value 17.
+For every oddie array, we define a odd pair (i,j)  i denotes the index of the second-highest odd value (1-indexed) and
+j denotes the index of the highest odd value (1-indexed). In the above array, the odd pair is (5, 7) [Assumption: Array
+index starts from 1].
+Given an array, find the total number of distinct pairs over all its subarrays.
+
+Input:
+The first line contains an integer N denoting the length of the array. The next line contains N distinct integers
+denoting the elements of the array.
+
+Output:
+Output a single integer which is the answer to the problem.
+
+Constraints:
+1 <= N <= 106
+1 <= array elements <= 109
+Array elements are distinct.
+
+Sample Input
+
+5
+
+1 3 2 4 5
+
+Sample Output
+
+2
+
+Explanation
+
+Let us consider all the subarrays of the given array.
+The subarray [1] ,  subarray [2], subarray [3], subarray [4], subarray [5] are not oddie.
+Subarray [1, 3], subarray [3, 2], subarray [2, 4], subarray [4,5] are not oddie.
+The odd pair for subarray [1, 3, 2] is (1,2).
+The subarray [3, 2, 4] is not oddie.
+
+The odd pair for subarray [1, 3, 2, 4] is (1,2).
+The odd pair for subarray [1, 3, 2, 4,5] is (2, 5).
+So, there are the 2 distinct pairs, which are (1, 2), and (2, 5).
+
+Test Case 1:
+
+Input
+
+4
+
+1 3 2 4
+
+Output
+
+1

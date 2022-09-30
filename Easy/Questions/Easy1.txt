@@ -1,0 +1,70 @@
+Codathon2022 (E) Q11. Gross Salary
+
+    Let's say you are an employee of organization. The organization determines the employees' salaries for a 30-days
+period. If an employee is on leave, the string '0' is used to indicate this. On the other hand, the string "1" is used
+to indicate that the employee is at work. Every day the employee X works, they are paid S rupees. The bonus is also
+included with each employee if they work the longest consecutive stretch of days in a given month
+(i.e., without taking any breaks). For the month's longest workweek, the corporation awards bonus B rupees.
+
+Your task is to calculate the employee X's salary (including the bonus B).
+
+Note: Only one longest streak will be counted if there are two or more of the same length.
+
+Input:
+
+(1) The first line denotes the number of test cases, T.
+
+(2) Each test case's first line contains the two integers S and B. (S stands for the entire monthly compensation,
+and B stands for the bonus for the consecutively longest working days during the month.)
+
+(3) The second line is made up of strings of 0s and 1s. (0's indicate a leave of absence, and 1 indicates work).
+
+Output:
+
+For each test case, output is a single line i.e. the salary of the employee X (including the bonus).
+
+Example:
+
+Input                                                                                    Output
+
+2                                                                                        117000
+
+6000 3000                                                                                152000
+
+111100110101100000101100011111
+
+8000 2000
+
+111010111101001010100100111101
+
+Explanation:
+
+Test case 1: 
+
+Employee works for 17 days in the month and each day salary is 6000 /-. Therefore 17*6000 = 102000 /-. The length of
+continuous working days are 5 (the last 5 working days). Each bonus day salary is 3000. Therefore, 5*3000 = 15000. The
+total salary of the employee is 102000 + 15000 = 117000 /-.
+
+Test case 2: 
+
+Employee pay is 18*8000 = 144000 and bonus is 4*2000 = 8000. Total salary is 152000 /-.
+
+Sample Test cases
+
+Sample Input 1
+
+2
+
+6000 3000
+
+111100110101100000101100011111
+
+8000 2000
+
+111010111101001010100100111101
+
+Sample Output 1
+
+117000
+
+152000

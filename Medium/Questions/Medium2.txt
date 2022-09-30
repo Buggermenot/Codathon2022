@@ -1,0 +1,35 @@
+Codathon2022 (M) Q12.Flipping Registrations
+
+Let's say a computer programmer wants to sort the registration number of students. He is trying to sort the
+registration numbers in increasing order by reversing some of his registration numbers. He came to the conclusion that
+he can only reverse registration numbers whose element sums are at most Y. He observes that using this criterion to sort
+the registration numbers is not always practicable. Could you assist him by reversing some registration numbers in a
+subarray with a sum of at most Y to help him sort the registration numbers? The registration numbers need not be
+essentially unique.
+
+More formally, you are provided an array and an integer Y. By flipping some (or none) of the subarrays so that the sum
+of all of their items is at most Y, you must sort the array in increasing order.
+
+Input: (1) The number of test cases is indicated by an integer value on the first line.
+
+(2) The length of the array and the largest sum of the subarray that can be reversed are indicated by the two integers
+M and Y on the first line of each test case, respectively.
+
+(3) The second line consists of the initial array.
+
+Output: If the array can be sorted in a finite number of operations for each test case, print "YES," otherwise output
+"NO." (Note that the output statement is not case-sensitive.)
+
+Sample Test cases
+
+Sample Input 1
+
+1
+
+4 1
+
+1 2 3 4
+
+Sample Output 1
+
+YES
